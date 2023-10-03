@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root{
+/* Primary */
+--Orange:hsl(25, 97%, 53%);
+
+/* Neutral */
+
+--White : hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--VeryDarkBlue);
+}
+
+.box{
+    background-color: var(--DarkBlue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--White);
+    padding: 50px;
+    border-radius: 30px;
+    width: 30%;
+}
+.box .content{
+    margin-top: 30px;
+    /* text-align: justify; */
+}
+.box .img{
+    background-color: var(--VeryDarkBlue);
+    display: inline-block;
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+.content p{
+    margin-top: 30px;
+    text-align: justify;
+}
+.box .rating-btn{
+    margin-top: 30px;
+}
+.rating-btn ol{
+    display: flex;
+    list-style-type: none;
+}
+.submit-btn button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--Orange) ;
+    color: var(--White);
+    margin-top: 30px;
+}
+.submit-btn button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+.rating-btn ol{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.rating-btn ol li{
+    background-color: hsla(216, 12%, 32%, 0.2);
+    color: var(--White);
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+}
+ol li:hover {
+    background-color: var(--LightGrey);
+    cursor: pointer;
+}
+.rating.clicked{
+    background-color: var(--Orange);
+    color: var(--DarkBlue);
+}
+
+/* box-2 */
+
+.box-2{
+    background-color: var(--DarkBlue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--White);
+    padding: 50px;
+    border-radius: 30px;
+    width: 30%;
+    text-align: center;
+    visibility: hidden;
+}
+.box-2 .img img{
+    height: 80px;
+}
+.box-2 .content{
+    margin-top: 30px;
+}
+.box-2 .content p{
+    margin-top: 30px;
+    text-align: center;
+}
+.box-2 .rating-btn{
+    margin-top: 30px;
+}
+.feedback-rating{
+    margin-top: 30px;
+}
+.feedback-rating p{
+    background-color: var(--VeryDarkBlue);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--Orange);
+}
